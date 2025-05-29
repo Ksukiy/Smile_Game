@@ -6,32 +6,134 @@
   }
   .inicial {
     text-align: center;
-    font-size: 100px;
-    background-color: lightgrey;
-    width: 150px;
-    height: 200px;
-    border: 15px solid green;
+    font-size: 150px;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLACU4g-0cmeh82YBxL4Z4PEap6H24d0C76g&s);
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position: center;
+    width: 500px;
+    height: 300px;
+    border: 15px solid rgb(202, 185, 85);
     padding: 10px;
     margin: 20px;
+    border-radius: 30px;
+    transition: all 0.2s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   }
   .acertou {
     text-align: center;
-    color: yellow;
-    background-color: LawnGreen;
-    width: 150px;
-    height: 200px;
-    border: 15px solid yellow;
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    background: url(https://preview.redd.it/ubxxgozu76191.jpg?auto=webp&s=de52e5627511e9c1e00909fb4c89170d7c2a18da);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    width: 500px;
+    height: 300px;
+    border: 15px solid rgb(202, 172, 0);
     padding: 10px;
     margin: 20px;
+    border-radius: 30px;
+    transition: all 0.2s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   }
   .errou {
     text-align: center;
-    font-size: 100px;
     color: white;
-    background-color: red;
-    width: 150px;
-    height: 200px;
+    background: url(https://external-preview.redd.it/RGH2NBehFFvSvufHw1ka5MFBZqY6mOKz4RbGApzwXtA.jpg?auto=webp&s=77a965049d2f85b3860c4941b44ea782ef830a9c);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center;
+    width: 500px;
+    height: 300px;
     border: 15px solid black;
     padding: 10px;
     margin: 20px;
+    border-radius: 30px;
+    transition: all 0.2s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   }
+
+  body {
+    background-color: antiquewhite;
+  }
+
+  h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .inicial:hover {
+    background-color: rgb(0, 9, 131);
+    color: white;
+    cursor: pointer;
+    background: rgba(250, 198, 101, 0.527);
+    transform: scale(1.05);
+    border: 5px solid;
+  }
+
+  .errou:hover {
+    color: rgb(117, 80, 0);
+    cursor: pointer;
+    border: 5px solid rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    transform: scale(1.05);
+  }
+
+  .acertou:hover {
+    color: rgb(196, 173, 43);
+    cursor: pointer;
+    border: 5px solid rgb(202, 172, 0);
+    transform: scale(1.05);
+  }
+
+
+  button{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(219, 208, 171);
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  #joganovamente {
+  font-size: 25px;
+  width: 300px;   /* diminui a largura */
+  padding-left: 2px;
+  padding-right: 2px;
+  transition: all 0.2s;
+}
+
+#reiniciar {
+  background-color: rgb(219, 138, 72);
+  font-size: 25px;
+  width: 300px;   /* diminui a largura */
+  padding-left: 2px;
+  padding-right: 2px;
+  transition: all 0.2s;
+}
+
+#reiniciar:hover {
+  background-color: rgb(219, 138, 72);
+  color: white;
+  cursor: pointer;
+  border-color: rgb(0, 0, 0);
+  transform: scale(1.05);
+  border-radius: 5px;
+}
+
+#joganovamente:hover {
+  color: white;
+  cursor: pointer;
+  border-color: rgb(0, 0, 0);
+  transform: scale(1.05);
+  border-radius: 5px;
+}
