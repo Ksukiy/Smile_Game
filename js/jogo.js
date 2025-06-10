@@ -61,26 +61,20 @@
     }
 
     //funçao executada quando o jogador acertou
-    function acertou(obj) {
-      //altera a classe CSS da <div> escolhida pelo jogador (className)
-      obj.className = "acertou";
-      //Criar uma constante img que armazena um novo objeto imagem com largura de 100px
-      const img = new Image(100);
-      img.id = "imagem";
-      //altera o atributo src (source) da imagem criada
-      img.src = "";
-      //adiciona a imagem criada na div (obj) escolhida pelo jogador (appendChild)
+    function adicionarImagem(obj, id, largura, src, classe) {
+      obj.className = classe;
+      const img = new Image(largura);
+      img.id = id;
+      img.src = src;
       obj.appendChild(img);
     }
 
-    //funçao executada quando o jogador errou
+    function acertou(obj) {
+      adicionarImagem(obj, "imagem", 100, "", "acertou");
+    }
+
     function errou(obj) {
-      //altera a classe CSS da <div> escolhida pelo jogador (className)
-      obj.className = "errou";
-      const img = new Image(425);
-      img.id = "imagemerrada";
-      img.src = "";
-      obj.appendChild(img);
+      adicionarImagem(obj, "imagemerrada", 425, "", "errou");
     }
 
 
